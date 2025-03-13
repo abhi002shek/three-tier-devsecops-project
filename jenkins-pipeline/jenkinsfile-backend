@@ -40,7 +40,7 @@ pipeline {
         stage('Quality Check') {
             steps {
                 script {
-                    waitForQualityGate abortPipeline: false, credentialsId: 'sonar-token' 
+                    waitForQualityGate abortPipeline: false, credentialsId: 'squ_078c61b49bed7c2781d24c8421e21a8a443695fd' 
                 }
             }
         }
